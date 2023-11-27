@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Face recognition</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="container">
+     
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+        <center>
+         <h3 class="btn btn-default heading">Face Recognition</h3>
+          <br><br>
+        
+          <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+          <b class="name_of_members">
+            Me
+            <hr>
+            Mother
+            <hr>
+            father
+            <hr>
+          </b>
+          <label>Webcam View - </label>
+          <div id="camera"></div>
+          <br><br>
+          <div id="result"></div>
+          <br><br>
+          <button class="btn btn-danger" onclick="take_snapshot()">Capture Img of member</button>
+          <br><br>
+          <button class="btn btn-success" onclick="check()">Identify Member</button>
+          <br><br>
+
+          <p style="font-size: 22px;">Member : <span id="result_member_name"></span>   </p>
+          <p style="font-size: 22px;">Accuracy : <span id="result_member_accuracy"></span>  </p>
+        </center>
+    
+      </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
